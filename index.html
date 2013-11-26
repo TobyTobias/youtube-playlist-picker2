@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=utf-8>
+		<title>Youtube Playlist Picker</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="fonts/icons.css">
+	</head>
+	<body>
+		<div id='wrap'>
+			<div id='main'>
+				<div id='left'>
+					<form id='search-form' action='javascript:void(0)'>
+						<h1>Youtube Playlist Picker</h1>
+						<hr />
+						<input id='search-input' placeholder='Search Youtube...' type='search' />
+						<div id='search-settings'>
+							<h3 id='search-value'>Start searching for videos!</h3>
+						</div>
+						<hr />
+						<h2>Sort By:</h2>
+						<span class='orderby-radio'>
+							<input type="radio" name="orderby" value="relevance" checked>
+							Relevance
+						</span>
+						<span class='orderby-radio'>
+							<input type="radio" name="orderby" value="published">
+							Published
+						</span>
+						<span class='orderby-radio'>
+							<input type="radio" name="orderby" value="viewCount">
+							View Count
+						</span>
+						<span class='orderby-radio'>
+							<input type="radio" name="orderby" value="rating">
+							Rating
+						</span>
+					</form>
+
+					<div id='search-results'>
+					</div>
+				</div>
+				<div id='right'>
+					<h1>Playlist 
+						<a href='javascript:void(0)' class='playlist-clear'>
+							<span class="icon icon-remove"></span>
+						</a>
+					</h1>
+					<hr />
+					<div id='playlist-container'>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="h5utils.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
+	</body>
+</html>
